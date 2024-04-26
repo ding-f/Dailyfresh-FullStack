@@ -47,20 +47,22 @@ class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.Retriev
     # 如果有了下面的get_queryset。那么上面的这个就不需要了。
     # queryset = GoodsSKU.objects.all()
 
-    # 限制API访问请求，限制客户端请求频率的一个属性。通过设置 throttle_classes 属性，可以限制客户端对 API 接口的请求频率，从而保护服务器的资源和数据安全。当某个客户端的请求量达到预设的阈值时，可以根据设置的限制策略，暂时禁止该客户端继续发送请求。这个属性通常被用在需要身份验证或者公开的 API 上，以避免被攻击或恶意请求。
-    throttle_classes = (UserRateThrottle, AnonRateThrottle)
+    # 以下来自viewsets.GenericViewSet,通过某个父继承得来以下变量
+    # @查询所有
+    queryset = GoodsSKU.objects.all()
     # @序列化器
     serializer_class = GoodsSKUSerializer
     # @分页器
     pagination_class = GoodsPagination
-    # @查询所有
-    queryset = GoodsSKU.objects.all()
+    # 设置三大常用过滤器之DjangoFilterBackend, SearchFilter搜索，OrderingFilter排序
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
+    # 限制API访问请求，限制客户端请求频率的一个属性。通过设置 throttle_classes 属性，可以限制客户端对 API 接口的请求频率，从而保护服务器的资源和数据安全。当某个客户端的请求量达到预设的阈值时，可以根据设置的限制策略，暂时禁止该客户端继续发送请求。这个属性通常被用在需要身份验证或者公开的 API 上，以避免被攻击或恶意请求。
+    throttle_classes = (UserRateThrottle, AnonRateThrottle)
 
     # 设置列表页的单独auth认证也就是不认证
     # authentication_classes = (TokenAuthentication,)
 
-    # 设置三大常用过滤器之DjangoFilterBackend, SearchFilter搜索，OrderingFilter排序
-    filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
+
     # 设置排序
     ordering_fields = ('sold_num', 'shop_price')
     # 设置filter的类为我们自定义的类

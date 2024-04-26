@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="" />
+    <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../Front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +20,6 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="VueDjangoFrameWorkShop" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,6 +141,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="77" />
     <option name="y" value="2" />
@@ -238,17 +243,27 @@
     </panes>
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dailyfresh-B2C-master/dailyfresh" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.VueDjangoWorkShop.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/fuding/Desktop/OpenSource/Dailyfresh-B2C/Backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\张佩\Desktop\Dailyfresh-B2C\Backend\apps\goods\migrations" />
@@ -268,6 +283,7 @@
   <component name="RunManager" selected="Django Server.VueDjangoWorkShop">
     <configuration name="category_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -290,6 +306,7 @@
     </configuration>
     <configuration name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -312,6 +329,7 @@
     </configuration>
     <configuration name="import_goods_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -334,6 +352,7 @@
     </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -354,20 +373,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="product_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yunpian" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools/data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/data/product_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/yunpian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,18 +398,19 @@
     </configuration>
     <configuration name="VueDjangoWorkShop" type="Python.DjangoServer" factoryName="Django server">
       <module name="VueDjangoFrameWorkShop" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\张佩\Desktop\Dailyfresh-B2C\Backend\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8001" />
       <option name="host" value="0.0.0.0" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -401,21 +422,28 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.VueDjangoWorkShop" />
+      <item itemvalue="Python.category_data" />
+      <item itemvalue="Python.import_category_data" />
       <item itemvalue="Python.import_goods_data" />
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.import_category_data" />
-      <item itemvalue="Python.product_data" />
-      <item itemvalue="Python.category_data" />
+      <item itemvalue="Python.yunpian" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.yunpian" />
         <item itemvalue="Python.import_goods_data" />
         <item itemvalue="Python.import_category_data" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.category_data" />
-        <item itemvalue="Python.product_data" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -467,6 +495,44 @@
       <workItem from="1685206371420" duration="604000" />
       <workItem from="1685254207379" duration="804000" />
       <workItem from="1685278954808" duration="2763000" />
+      <workItem from="1686455298865" duration="592000" />
+      <workItem from="1686478472513" duration="3769000" />
+      <workItem from="1686482327083" duration="3706000" />
+      <workItem from="1686486501912" duration="532000" />
+      <workItem from="1686487048947" duration="4865000" />
+      <workItem from="1686541061490" duration="819000" />
+      <workItem from="1686542981219" duration="26000" />
+      <workItem from="1686543154419" duration="74000" />
+      <workItem from="1686543416980" duration="1226000" />
+      <workItem from="1686706677521" duration="229000" />
+      <workItem from="1686812391175" duration="2087000" />
+      <workItem from="1687144926502" duration="11710000" />
+      <workItem from="1687224505188" duration="18873000" />
+      <workItem from="1687273013395" duration="8123000" />
+      <workItem from="1687310322256" duration="1605000" />
+      <workItem from="1687311997089" duration="13869000" />
+      <workItem from="1687515770688" duration="8414000" />
+      <workItem from="1687656133674" duration="18280000" />
+      <workItem from="1687742280083" duration="3423000" />
+      <workItem from="1687793277957" duration="603000" />
+      <workItem from="1687798347048" duration="7905000" />
+      <workItem from="1687881755645" duration="47685000" />
+      <workItem from="1688351635585" duration="554000" />
+      <workItem from="1688613305912" duration="598000" />
+      <workItem from="1690883534803" duration="1394000" />
+      <workItem from="1691244024405" duration="680000" />
+      <workItem from="1691246677209" duration="159000" />
+      <workItem from="1691334669263" duration="3942000" />
+      <workItem from="1691861773182" duration="6000" />
+      <workItem from="1692867186757" duration="33000" />
+      <workItem from="1693066519017" duration="553000" />
+      <workItem from="1693067073025" duration="869000" />
+      <workItem from="1693753808053" duration="75000" />
+      <workItem from="1713352840512" duration="1043000" />
+      <workItem from="1713864515044" duration="129000" />
+      <workItem from="1713864672903" duration="225000" />
+      <workItem from="1714050414193" duration="248000" />
+      <workItem from="1714117990122" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="截止5-8已完成。">
       <created>1519160514318</created>
@@ -662,7 +728,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="截止5-8已完成。" />
@@ -685,42 +750,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/serializers.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/serializers.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/views.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/views.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/views.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1679076348285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1680445874000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
     <SUITE FILE_PATH="coverage/Backend$category_data.coverage" NAME="category_data Coverage Results" MODIFIED="1679064944465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools/data" />
     <SUITE FILE_PATH="coverage/Backend$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1680445866981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
-    <SUITE FILE_PATH="coverage/Backend$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1680445874000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/Backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1679076348285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend$yunpian.coverage" NAME="yunpian Coverage Results" MODIFIED="1687278084840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/Backend$product_data.coverage" NAME="product_data Coverage Results" MODIFIED="1679064933589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools/data" />
   </component>
   <component name="editorHistoryManager">

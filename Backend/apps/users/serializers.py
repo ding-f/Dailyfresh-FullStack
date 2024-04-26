@@ -12,6 +12,7 @@ User = get_user_model()
 
 
 class SmsSerializer(serializers.Serializer):
+    # `Serializer` **不直接与数据库模型关联**，因此需要**手动编写字段定义**和数据**操作逻辑**。
     mobile = serializers.CharField(max_length=11)
 
     def validate_mobile(self, mobile):
@@ -43,6 +44,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ("username", "gender", "birthday", "email", "mobile")
+
 
 class UserRegSerializer(serializers.ModelSerializer):
     code = serializers.CharField(required=True, write_only=True, max_length=4, min_length=4, label="验证码",
@@ -79,7 +81,7 @@ class UserRegSerializer(serializers.ModelSerializer):
         #     pass
 
         # 验证码在数据库中是否存在，用户从前端post过来的值都会放入initial_data里面，排序(最新一条)。
-        verify_records = VerifyCode.objects.filter(mobile=self.initial_data["username"]).order_by("-add_time")
+        verify_records = VerifyCode.objects.filter(mobile=self.initial_data["mobile"]).order_by("-add_time")
         if verify_records:
             # 获取到最新一条
             last_record = verify_records[0]
@@ -97,7 +99,8 @@ class UserRegSerializer(serializers.ModelSerializer):
 
     # 不加字段名的验证器作用于所有字段之上。attrs是字段 validate之后返回的总的dict
     def validate(self, attrs):
-        attrs["mobile"] = attrs["username"]
+        # attrs["mobile"] = attrs["username"]
+        # 删除列表中的元素
         del attrs["code"]
         return attrs
 

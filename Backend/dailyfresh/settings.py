@@ -114,8 +114,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dailyfresh',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'fuding',
         'HOST': '127.0.0.1',
+        'PORT': '3305',
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
 }

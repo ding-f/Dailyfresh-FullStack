@@ -72,16 +72,17 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
 
         sms_status = yun_pian.send_sms(code=code, mobile=mobile)
 
-        if sms_status["code"] != 0:
-            return Response({
-                "mobile": sms_status["msg"]
-            }, status=status.HTTP_400_BAD_REQUEST)
-        else:
-            code_record = VerifyCode(code=code, mobile=mobile)
-            code_record.save()
-            return Response({
-                "mobile": mobile
-            }, status=status.HTTP_201_CREATED)
+
+        # if sms_status["code"] != 0:
+        #     return Response({
+        #         "mobile": sms_status["msg"]
+        #     }, status=status.HTTP_400_BAD_REQUEST)
+        # else:
+        code_record = VerifyCode(code=code, mobile=mobile)
+        code_record.save()
+        return Response({
+            "mobile": mobile
+        }, status=status.HTTP_201_CREATED)
 
 
 class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
@@ -89,9 +90,11 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     用户
     """
     serializer_class = UserRegSerializer
+    # url路由相关
     queryset = User.objects.all()
     authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
+    # GenericAPIViewlaiz是GenericViewSet父，get_serializer_class来自父类
     def get_serializer_class(self):
         if self.action == "retrieve":
             return UserDetailSerializer
@@ -109,12 +112,14 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
 
         return []
 
-
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = self.perform_create(serializer)
-
+        # user = self.perform_create(serializer)
+        # 其中上传的code不会被保存到此处，因为已经在def validate(self, attrs): del attrs["code"]
+        # 多此一举，改成这样不就OK？
+        user = serializer.save()
+        print(user)
         re_dict = serializer.data
         payload = jwt_payload_handler(user)
         re_dict["token"] = jwt_encode_handler(payload)
@@ -127,5 +132,6 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     def get_object(self):
         return self.request.user
 
+    # CreateModelMixin中已经实现的方法，直接调用即可
     def perform_create(self, serializer):
         return serializer.save()

@@ -9,8 +9,10 @@ class GoodsType(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
+        # 对应数据库表名
         db_table = 'df_goods_type'
-        verbose_name = '商品种类'
+        # 后台管理中显示
+        verbose_name = '商品卧槽种类'
         verbose_name_plural = verbose_name
 
     def __str__(self):
